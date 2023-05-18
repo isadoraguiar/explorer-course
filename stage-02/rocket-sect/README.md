@@ -1,7 +1,7 @@
-<h1 align="center"> Treine.me </h1>
+<h1 align="center"> Rocket.sect </h1>
 
 <p align="center">
-Projeto desenvolvido no programa Explorer da Rocketseat para aprender alguns conceitos como Flexbox. <br/>
+Projeto simples desenvolvido no programa Explorer da Rocketseat. <br/>
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@ Projeto desenvolvido no programa Explorer da Rocketseat para aprender alguns con
   <img src=".github/preview.jpg" width="100%">
 </p>
 
- <h2 align="center"><a href="https://isadoraguiar.github.io/explorer-course/stage-02/treine-me" target="_blank" >Projeto ao vivo</a></h2>
+ <h2 align="center"><a href="https://isadoraguiar.github.io/explorer-course/stage-02/rocket-sect" target="_blank">Projeto ao vivo</a></h2>
 
 ### 🚀 Tecnologias
 

@@ -12,7 +12,7 @@ Primeiro projeto desenvolvido no programa Explorer da Rocketseat. <br/>
   <img src=".github/preview.jpg" width="100%">
 </p>
 
- <h2 align="center"><a href="https://isadoraguiar.github.io/explorer-course/stage-02/moveis-customizados" target="_blank" >Projeto ao vivo</a></h>
+ <h2 align="center"><a href="https://isadoraguiar.github.io/explorer-course/stage-02/moveis-customizados" target="_blank" >Projeto ao vivo</a></h2>
 
 ### 🚀 Tecnologias
 
