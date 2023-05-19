@@ -1,7 +1,7 @@
-<h1 align="center"> Formulário de Mentoria </h1>
+<h1 align="center"> Space Cream - Grid </h1>
 
 <p align="center">
-Segundo formulário desenvolvido no programa Explorer da Rocketseat <br/>
+Projeto aplicando a regra de mobile-first desenvolvido no programa Explorer da Rocketseat. <br/>
 </p>
 
 <p align="center">
@@ -10,11 +10,11 @@ Segundo formulário desenvolvido no programa Explorer da Rocketseat <br/>
 
 <p align="center">
   
-  ![ezgif com-video-to-gif](https://github.com/isadoraguiar/explorer-course/assets/105128106/8abe707b-8801-4f4e-9e3b-036d5f80ec6f)
-  
+  ![grid-space-cream-gif](https://github.com/isadoraguiar/explorer-course/assets/105128106/a116fecc-8ee5-4026-9068-dc3a628932d6)
+
 </p>
 
- <h2 align="center"><a href="https://isadoraguiar.github.io/explorer-course/stage-03/form-mentor" target="_blank" >Projeto ao vivo</a></h2>
+ <h2 align="center"><a href="https://isadoraguiar.github.io/explorer-course/stage-03/grid-space-cream" target="_blank" >Projeto ao vivo</a></h2>
 
 ### 🚀 Tecnologias
 
