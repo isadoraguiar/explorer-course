@@ -1,7 +1,7 @@
 <h1 align="center"> Space Cream - Grid </h1>
 
 <p align="center">
-Projeto aplicando a regra de mobile-first desenvolvido no programa Explorer da Rocketseat. <br/>
+Projeto versão Desktop do Space Cream, com introdução de grid, animação e transição, desenvolvido no programa Explorer da Rocketseat. <br/>
 </p>
 
 <p align="center">
