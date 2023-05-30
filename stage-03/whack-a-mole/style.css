@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("assets/bg.svg") no-repeat;
+  background-size: cover;
+}
+
+.holes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 22rem 0 12rem 0;
+}
+
+.hole {
+  margin-inline: auto;
+  width: 10rem;
+  height: 8rem;
+  background-image: url('assets/mole6.svg');
+  background-size: contain;
+}
+
+.hole.one,
+.hole.two,
+.hole.three,
+.hole.four,
+.hole.five,
+.hole.six {
+  animation-name: appearanceOfTheMole;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+
+.hole.one {
+  animation-delay: 3s;
+}
+
+.hole.two {
+  animation-delay: 6s;
+}
+
+.hole.three {
+  animation-delay: 9s;
+}
+
+.hole.four {
+  animation-delay: 12s;
+}
+
+.hole.five {
+  animation-delay: 15s;
+}
+
+.hole.six {
+  animation-delay: 18s;
+}
+
+@keyframes appearanceOfTheMole {
+  0% { background-image: url('assets/mole6.svg'); } 
+  16% { background-image: url('assets/mole1.svg'); } 
+  32% { background-image: url('assets/mole2.svg'); }
+  48% { background-image: url('assets/mole3.svg'); background-repeat: no-repeat;}
+  64% { background-image: url('assets/mole4.svg'); }
+  80% { background-image: url('assets/mole5.svg'); }
+  100% { background-image: url('assets/mole6.svg'); }
+}
+
+@media (min-width: 380px) {
+  .holes {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .holes {
+    grid-template-columns: repeat(4, 1fr);
+    padding-inline: 3rem;
+  }
+
+  .hole {
+    width: 12rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .holes {
+    padding-inline: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hole {
+    width: 14rem;
+    height: 12rem;
+  }
+
+  .holes {
+    padding-inline: 12rem;
+  }
+}
+
+@media (min-width: 1220px) {
+  .holes {
+    padding-inline: 16rem;
+  }
+}
+
+@media (min-width: 1320px) {
+  .holes {
+    padding-inline: 18rem;
+  }
+}
+
+
+
+
+
+
