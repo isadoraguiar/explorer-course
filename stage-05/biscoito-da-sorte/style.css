@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "DM Sans", sans-serif;
+  color: #34355b;
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container {
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main .container.hide {
+  display: none;
+}
+
+main .container header {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+main .container header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+}
+
+main .container .cookie-phrase {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  width: 29.3rem;
+  padding: 1rem;
+
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+}
+
+main .container button {
+  font-weight: 700; 
+  color: #fff;
+  background: #FF9500;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+
+  cursor: pointer;
+}
+
+main .container button:hover {
+  background: #eb8b04;
+}
+
+main .container.closed-cookie img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+
+  cursor: pointer;
+}
+
+main .container .cookie-phrase {
+  animation: showLucky 0.8s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(2px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-1px, -2px) rotate(1deg);
+  }
+  30% {
+    transform: translate(-2px, 0px) rotate(-1deg);
+  }
+  40% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  50% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-1px, 2px) rotate(0deg);
+  }
+  70% {
+    transform: translate(-2px, 1px) rotate(1deg);
+  }
+  80% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  90% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+}
+
+@keyframes showLucky {
+  0% {
+    transform: translateY(100%) scale(0);
+  }
+  10% {
+    transform: translateY(90%) scale(0.1);
+  }
+  20% {
+    transform: translateY(80%) scale(0.2);
+  }
+  30% {
+    transform: translateY(70%) scale(0.3);
+  }
+  40% {
+    transform: translateY(60%) scale(0.4);
+  }
+  50% {
+    transform: translateY(50%) scale(0.5);
+  }
+  60% {
+    transform: translateY(40%) scale(0.6);
+  }
+  70% {
+    transform: translateY(30%) scale(0.7);
+  }
+  80% {
+    transform: translateY(20%) scale(0.8);
+  }
+  90% {
+    transform: translateY(10%) scale(0.9);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
