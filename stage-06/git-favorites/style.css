@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --text-color: #303030;
+
+  --hue: 194;
+  --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+img,  
+svg {
+	display: block;
+	max-width: 100%
+}
+
+body, 
+input, 
+button {
+	font-size: 1.6rem;
+  color: var(--txt-color);
+  font-family: var(--ff-primary), sans-serif;
+}
+
+body {
+  background-color: rgb(250, 254, 255);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  margin: 3rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  height: 3.2rem;
+
+  border: 1px solid #ccc;
+  border-radius: .4rem 0 0 .4rem;
+  padding: 0 .8rem;
+}
+
+.search input::placeholder {
+  font-size: 1.4rem;
+}
+
+.search button {
+  background-color: var(--primary-color);
+  height: 3.2rem;
+
+  border: none;
+  border-radius: 0 .4rem .4rem 0;
+
+  padding: 0 1rem;
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+main {
+  width: min(95%, 50rem);
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+
+  font-size: clamp(1rem, 0.6rem + 1.25vw, 1.4rem);
+
+  margin-bottom: 2.5rem;
+}
+
+table th {
+  background: var(--primary-color);
+  text-align: left;
+  font-weight: normal;
+
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+
+table tr {
+  background: #eee;
+}
+
+table tr:nth-child(odd) {
+  background: #ddd;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: min(12vw, 5rem);
+  height: min(12vw, 5rem);
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
+td.user p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  color: red;
+  
+  border: none;
+
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    gap: 2rem;
+  }
+}

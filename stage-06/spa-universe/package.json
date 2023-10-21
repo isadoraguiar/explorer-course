@@ -1,0 +1,15 @@
+{
+  "name": "spa-universe",
+  "version": "1.0.0",
+  "description": "SPA com JS Vanilla",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "Isadora Aguiar",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
