@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-texting: 'Palanquin', sans-serif;
+  --ff-heading: 'Staatliches', cursive;
+  --ff-secondary: 'Open Sans', sans-serif;
+
+  --bg-primary: hsl(233, 100%, 97%);
+  --bg-secondary: hsl(218, 17%, 62%);
+  --bg-title: hsl(275, 18%, 79%);
+  --fc-primary: hsl(0, 0%, 100%);
+  --fc-secondary: hsl(232, 17%, 35%);
+  --fc-texting: hsl(274, 84%, 12%);
+
+  font-size: 62.5%;
+  --fs-primary: 4rem;
+  --fs-secondary: 2rem;
+  --fs-texting: 1.4rem;
+}
+
+body {
+  font-family: var(--ff-texting);
+  background-color: var(--bg-primary);
+}
+
+h1 {
+  font-size: var(--fs-primary);
+  color: var(--fc-primary);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  
+  background-color: var(--bg-title);
+  
+  padding: 0.8rem;
+  margin-bottom: 2.9rem;
+
+  width: 100%;
+  text-align: center;
+}
+
+h1, span {
+  font-family: var(--ff-heading);
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: var(--bg-secondary);
+  
+  display: grid;
+  place-items: center;
+}
+
+#logo-mobile {
+  padding: 3.2rem 0;
+}
+
+#logo-desktop {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 1.8rem 3.2rem 6rem;
+}
+
+.text {
+  font-size: var(--fs-texting);
+  font-weight: normal;
+  line-height: 1.8rem;
+  color: var(--fc-texting);
+
+  text-align: center; 
+  
+  margin: 0 auto 6.3rem;
+}
+
+.desktop-text {
+  display: none;
+}
+
+.cards {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.cards .card {
+  position: relative;
+  height: fit-content;
+  transition: all 400ms;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.cards .card span {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+ 
+  font-size: var(--fs-secondary);
+  color: var(--fc-secondary);
+
+  background-color: hsla(312, 91%, 96%);
+
+  border-radius: 2rem;
+  padding: 0 2.3rem;
+
+  animation: topdown 1s;
+}
+
+.cards .card img {
+  width: 100%;
+  border-radius: 2rem;
+
+  animation: downtop 1s;
+}
+
+footer {
+  display: none;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 900px) {
+  .page {
+    display: flex;
+  }
+
+  h1 {
+    margin-bottom: 3.2rem;
+  }
+
+  header {
+    width: 37.7rem;
+    height: 100vh;
+    position: fixed; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    padding: 2rem 5.4rem 4.6rem 5.4rem;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .desktop-text {
+    display: block;
+    color: #ffffff;
+    font-size: var(--fs-texting);
+    line-height: 2.5rem;
+    width: 27.5rem;
+    text-align: center;
+  }
+
+  .cards {
+    margin-left: 37.7rem;
+    grid-template-areas: 
+    'A B'
+    'C B'
+    'C D'
+    'E F';
+  }
+
+  .cards .card:nth-child(1) {
+    grid-area: A;
+  }
+
+  .cards .card:nth-child(2) {
+    grid-area: B;
+  }
+
+  .cards .card:nth-child(3) {
+    grid-area: D;
+  }
+
+  .cards .card:nth-child(4) {
+    grid-area: C;
+  }
+
+  .cards .card:nth-child(5) {
+    grid-area: E;
+  }
+
+  .cards .card:nth-child(6) {
+    grid-area: F;
+  }
+
+  #logo-mobile {
+    display: none;
+  }
+
+  #logo-desktop {
+    display: block;
+    padding: 3.2rem 0;
+  }
+
+  footer {
+    padding-top: 5rem;
+    margin-left: 37.7rem;
+    display: block;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: var(--fs-texting);
+    font-family: var(--ff-secondary);
+    font-weight: 400;
+    color: var(--fc-secondary);
+    line-height: 28px;
+  }
+
+  footer p a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--fc-secondary);
+  }
+}
+
+@media (min-width: 1280px) {
+  .cards {
+    grid-template-areas: 
+    'A B C'
+    'D B E'
+    'D F E';
+  }
+
+  .cards .card:nth-child(1) {
+    grid-area: A;
+  }
+
+  .cards .card:nth-child(2) {
+    grid-area: B;
+  }
+
+  .cards .card:nth-child(3) {
+    grid-area: C;
+  }
+
+  .cards .card:nth-child(4) {
+    grid-area: D;
+  }
+
+  .cards .card:nth-child(5) {
+    grid-area: F;
+  }
+
+  .cards .card:nth-child(6) {
+    grid-area: E;
+  }
+}
